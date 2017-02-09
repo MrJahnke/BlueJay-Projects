@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=l\ v
+comment0.target=Tile(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getLetter()
+comment2.params=
+comment2.target=int\ getValue()
+comment3.params=s
+comment3.target=void\ setLetter(java.lang.String)
+comment4.params=v
+comment4.target=void\ setValue(int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

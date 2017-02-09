@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=letter\ size
+comment0.target=void\ printBox(char,\ int)
+numComments=1

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=lineToFormat
+comment0.target=TextFormatter(java.lang.String)
+comment1.params=newLine
+comment1.target=void\ setLine(java.lang.String)
+comment2.params=str\ start
+comment2.target=int\ findString(java.lang.String,\ int)
+comment2.text=\n\ Finds\ the\ first\ single\ instance\ of\ str\ in\ line,\n\ starting\ at\ the\ position\ start\n\ @param\ str\ the\ string\ of\ length\ 1\ to\ find.\n\ Guaranteed\ to\ be\ length\ 1.\n\ @param\ start\ the\ position\ to\ start\ searching.\n\ Guaranteed\ to\ be\ in\ the\ string\ line.\n\ @return\ the\ index\ of\ the\ first\ single\ instance\ of\n\ str\ if\ the\ string\ is\ found\ or\ -1\ if\ it\ is\ not\ found.\n
+comment3.params=str
+comment3.target=int\ countStrings(java.lang.String)
+comment3.text=\n\ Count\ the\ number\ of\ times\ single\ instances\ of\ str\ appear\ in\n\ the\ line.\n\ @param\ str\ the\ string\ to\ find.\n\ Guaranteed\ to\ be\ length\ 1.\n\ @return\ the\ number\ of\ times\ the\ string\ appears\ in\ the\ line\n
+comment4.params=
+comment4.target=java.lang.String\ convertItalics()
+comment4.text=\n\ Replace\ all\ single\ instances\ of\ underscores\ in\ the\ line\ given\ by\n\ line\ with\ italics\ tags.\ \ There\ must\ be\ an\ even\ number\ of\ underscores\ 9\n\ in\ the\ line,\ and\ they\ will\ be\ replaced\ by\ <I>,\ </I>,\ alternating.\n\ @param\ original\ a\ string\ of\ length\ 1\ to\ replace\n\ @param\ replacement\ the\ string\ (of\ any\ length)\ use\ as\ a\ replacement\n\ @return\ the\ line\ with\ single\ instances\ of\ underscores\ replaced\ with\n\ <I>\ tags\ or\ the\ original\ line\ if\ there\ are\ not\ an\ even\ number\ of\n\ underscores.\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

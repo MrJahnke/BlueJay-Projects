@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ScrabbleTiles()
+comment0.text=\n\ A\ no\ arguements\ constructor\ that\ creates\ all\ the\ tiles\n\ for\ a\ new\ game\ of\ Scrabble.\n
+comment1.params=
+comment1.target=void\ newGameTiles()
+comment2.params=
+comment2.target=java.util.ArrayList\ getTiles()
+comment3.params=
+comment3.target=int\ tilesLeft()
+comment4.params=letters\ points
+comment4.target=void\ makeTiles(java.lang.String,\ int)
+comment4.text=\ \n\ A\ new\ game\ method\ called\ by\ the\ constructor\ that\ takes\ a\ String\ of\ letters\ \n\ and\ makes\ Tiles\ of\ each\ letter,\ then\ adds\ the\ Tiles\ to\ tiles.\n\ @param\ A\ String\ of\ letters\n\ @param\ The\ point\ value\ of\ each\ letter\ (all\ the\ letters\ should\ have\ the\ same\ point\ value.\n
+comment5.params=
+comment5.target=void\ shuffleTiles()
+comment5.text=\ \n\ A\ method\ that\ shuffles\ all\ the\ tiles\ in\ the\ ArrayList<Tiles>\ tiles.\n\ Takes\ a\ random\ tile\ and\ moves\ it\ to\ a\ new\ Arraylist,\ then\ returns\n\ the\ new\ ArrayList.\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Team()
+comment1.params=p
+comment1.target=Team\ addPlayer(Player)
+comment2.params=
+comment2.target=double\ weight()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

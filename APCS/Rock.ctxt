@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rock()
+comment1.params=w
+comment1.target=Rock(double)
+comment2.params=
+comment2.target=double\ getWeight()
+comment3.params=
+comment3.target=void\ erode()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=box\ r
+comment5.target=Rock[]\ addRock(Rock[],\ Rock)
+comment6.params=box\ i
+comment6.target=Rock[]\ removeRock(Rock[],\ int)
+comment7.params=box
+comment7.target=Rock[]\ split(Rock[])
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

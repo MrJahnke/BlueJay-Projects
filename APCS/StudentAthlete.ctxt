@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StudentAthlete()
+comment1.params=n\ g\ s
+comment1.target=StudentAthlete(java.lang.String,\ double,\ int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=int\ getSport()
+comment4.params=
+comment4.target=java.lang.String\ getSportName()
+numComments=5

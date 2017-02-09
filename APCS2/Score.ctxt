@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=Score(java.lang.String)
+comment1.params=n\ s
+comment1.target=Score(java.lang.String,\ int[])
+comment2.params=
+comment2.target=java.lang.String\ getPlayer()
+comment3.params=
+comment3.target=void\ clearCard()
+comment4.params=nums
+comment4.target=void\ addScore(int[])
+comment5.params=
+comment5.target=int\ getTotal()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
