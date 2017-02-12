@@ -74,20 +74,21 @@ public class TextFormatter
         /* To be implemented in part b) */ 
         int result = 0;
         //while indexOf method - more efficient.
-        /*
+        
         int psn = line.indexOf(str);
         while (psn>=0)
         {
                 result++;
                 psn = line.indexOf(str,psn+1);
         }
-        */
         //for substring method - checks each position.
+        /*
         for (int psn = 0; psn<line.length(); psn++)
         {
             if (line.substring(psn,psn+1).equals(str))
                 result++;
         }
+        */
         return result;
         
     }
