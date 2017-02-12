@@ -106,35 +106,28 @@ public class TextFormatter
   public String convertItalics ()
   {  
       /* To be implemented in part c) */ 
-      if (countStrings("_") % 2 != 0)
-      {  return line;   }
+      if (countStrings("_") % 2 == 1)
+            return line;
       
       String newString = "";
-      /* you can not just copy line and work with the copy. findString does not work
-       * with the copy. (it uses the instance data.)
-       */
-      int psn1 = 0;
-      int psn2 = this.findString("_",0);
+      String tag = "<I>";
+      int psn = 0;
       int nextI = 1;
-      if (psn2 == -1) {
-          return line;
-      }
       
-      while (psn2>=0)
+      while (this.findString("_",psn)>=0)
       {
-          newString = newString + line.substring(psn1,psn2); // + "<I>";
-          psn1 = psn2+1;
-          psn2 = this.findString("_",psn2+1);
-          
-          if (nextI == 1) 
-              newString += "<I>";
+          int newPsn = this.findString("_",psn);
+          newString = newString + line.substring(psn,newPsn); // + "<I>";
+         
+          if (tag.equals("<I>")) 
+              tag = "</I>";
           else 
-              newString += "</I>";
-          nextI = -nextI;
-               
-          if (psn2 == -1)
-              newString = newString + line.substring(psn1);
+              tag= "<I>";
+          newString = newString + tag; 
+          
+          psn = newPsn+1;
       }
+      newString = newString + line.substring(psn);
       return newString;
   }
   
