@@ -72,7 +72,24 @@ public class TextFormatter
     private int countStrings (String str)
     {  
         /* To be implemented in part b) */ 
-        return 0;
+        int result = 0;
+        //while indexOf method - more efficient.
+        /*
+        int psn = line.indexOf(str);
+        while (psn>=0)
+        {
+                result++;
+                psn = line.indexOf(str,psn+1);
+        }
+        */
+        //for substring method - checks each position.
+        for (int psn = 0; psn<line.length(); psn++)
+        {
+            if (line.substring(psn,psn+1).equals(str))
+                result++;
+        }
+        return result;
+        
     }
     
     /**
@@ -97,9 +114,15 @@ public class TextFormatter
   public static void main(String[] args)
   {
       TextFormatter myTC = new TextFormatter("aabaccb");
+      
       System.out.println(myTC.findString("a",0));  // 3
       System.out.println(myTC.findString("b",4));  // 6
       System.out.println(myTC.findString("c",0));  // -1
+      
+      System.out.println(myTC.countStrings("a"));  // 3
+      System.out.println(myTC.countStrings("b"));  // 2
+      System.out.println(myTC.countStrings("c"));  // 2
+      System.out.println(myTC.countStrings("d"));  // 0
       
       String convertedLine = "";
       myTC.setLine("This is _very_ good.");
