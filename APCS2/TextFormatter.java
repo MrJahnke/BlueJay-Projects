@@ -131,6 +131,12 @@ public class TextFormatter
       return newString;
   }
   
+  public String simpleChanger1(String s)
+  {
+      
+      return s;
+  }
+  
   public static void main(String[] args)
   {
       TextFormatter myTC = new TextFormatter("aabaccb");
