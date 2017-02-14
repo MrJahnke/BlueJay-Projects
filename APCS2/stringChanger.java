@@ -1,5 +1,5 @@
 
-public class stringChanger
+public class StringChanger
 {
     public static String change1(String s)
     {
