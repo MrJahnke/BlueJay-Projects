@@ -1,14 +1,13 @@
-import java.awt.Color;
-
 public abstract class Vehicle
 {
-    public final static int tankCapacity = 20;
+    public final static double PRICE_OF_GAS = 1.91;
     // instance variables
     private String model;
     private String color;
     private int year;
     private int odometer;
-    private int gallonsRemaining;
+    private double gasCapacity;
+    private double gasRemaining;
     private double mpg;
     
     public Vehicle(String m, String c, int y)
@@ -24,6 +23,10 @@ public abstract class Vehicle
     }
     
     public abstract String honk();
+    
+    public int getOdometer() return odometer;
+    public void setOdometer(int m) odometer = m;
+    public int getGasRemaining() return gasRemaining;
 
     
 }
