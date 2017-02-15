@@ -13,8 +13,14 @@ public class StringChanger
            result = result + s.substring(psn, nextPsn);
            // This always add <I>  not <I>...</I>
            // Change it using a if else statement and a boolean
-           if (true)
+           if (i)
+           {
               result += "<I>";
+              i = false;
+           } else {
+               result += "</I>";
+              i = true;
+           }
            
            psn = nextPsn+1;
        }
@@ -24,7 +30,7 @@ public class StringChanger
     
     public static String change2(String s)
     {
-       String tag;
+       String tag = "<I>";
        int psn = 0;
        String result = "";
        
@@ -34,8 +40,12 @@ public class StringChanger
            result = result + s.substring(psn, nextPsn);
            // This always add <I>  not <I>...</I>
            // Change it using a if else statement and string equals
-           if (true)
-              result += "<I>";
+          result += tag;
+           if (tag.equals("<I>"))
+              tag ="</I>";
+           else
+              tag ="<I>";  
+           
            
            psn = nextPsn+1;
        }
@@ -56,9 +66,11 @@ public class StringChanger
            // This always add <I>  not <I>...</I>
            // Change it using a if else statement and int == 
            // you can switch between i = 1 and i = -1 by adding i = -i
-           if (true)
+           if (i == 1)
               result += "<I>";
-           
+           else
+              result += "</I>";
+           i = -i;  
            psn = nextPsn+1;
        }
        result += s.substring(psn);
