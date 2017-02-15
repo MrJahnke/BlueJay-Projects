@@ -105,11 +105,36 @@ public class TextFormatter
     */
   public String convertItalics ()
   {  
-      String result = "hi";
-      
       /* To be implemented in part c) */ 
+      if (countStrings("_") % 2 == 1)
+            return line;
       
-      return result;
+      String newString = "";
+      String tag = "<I>";
+      int psn = 0;
+      int nextI = 1;
+      
+      while (this.findString("_",psn)>=0)
+      {
+          int newPsn = this.findString("_",psn);
+          newString = newString + line.substring(psn,newPsn); // + "<I>";
+         
+          if (tag.equals("<I>")) 
+              tag = "</I>";
+          else 
+              tag= "<I>";
+          newString = newString + tag; 
+          
+          psn = newPsn+1;
+      }
+      newString = newString + line.substring(psn);
+      return newString;
+  }
+  
+  public String simpleChanger1(String s)
+  {
+      
+      return s;
   }
   
   public static void main(String[] args)
