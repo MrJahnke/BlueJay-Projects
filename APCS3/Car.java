@@ -8,6 +8,7 @@ public class Car extends Vehicle
     {
         super(m,c,y);
         passengers = 5;
+        setGasCapacity(20);
     }
     
     public Car()

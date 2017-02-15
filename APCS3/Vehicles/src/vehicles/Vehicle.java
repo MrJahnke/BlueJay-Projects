@@ -1,7 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vehicles;
+
+/**
+ *
+ * @author Jonathan Jahnke
+ */
 public abstract class Vehicle
 {
-     final static double PRICE_PER_GALLON = 1.91;
-    // abstract static double 
+    public final static double PRICE_PER_GALLON = 1.91;
     // instance variables
     private final String model;
     private final String color;
@@ -26,23 +36,21 @@ public abstract class Vehicle
     
     public abstract String honk();
     
-    public void setGasCapacity(double cap) { gasCapacity = cap;}
     public int getOdometer() {return odometer;}
     public void setOdometer(int m) {odometer = m;}
     public double getGasRemaining() {return gasRemaining;}
-    public double addGas(double g) { 
+    public boolean addGas(double g) { 
         double gas = gasRemaining  + g;
         if (gas<=gasCapacity) {
             gasRemaining = gas;
-            return gas * Vehicle.PRICE_PER_GALLON;
+            return true;
         } else {
-            return 0;
+            return false;
         }
     }
     public double fillTank()
     {
         double gasNeeded = gasCapacity - gasRemaining;
-        gasRemaining = gasCapacity;
         return gasNeeded * Vehicle.PRICE_PER_GALLON;
     }
     
@@ -64,7 +72,7 @@ public abstract class Vehicle
         }
         
     }
-    
-    
 }
 
+//RADADSFASDFASDFSADFSADF
+ //       SADFSDF////

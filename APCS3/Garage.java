@@ -18,5 +18,17 @@ public class Garage
         {
             System.out.println(v.toString());
         }
+        
+        redCar.calculateMpg(250, 10);
+        double money = redCar.addGas(5); //fillTank();
+        System.out.println("Price to add 5 gallons: " + money);
+        money = redCar.fillTank(); //fillTank();
+        System.out.println("Price to fill tank: " + money);
+        System.out.println("With a full tank of gas we can to " + redCar.range() + " miles");
+        money = redCar.trip(345);
+        System.out.println("It will cost " + money + " to go 345 miles");
+        System.out.println("Odometer: " + redCar.getOdometer());
+        
+        
     }
 }
