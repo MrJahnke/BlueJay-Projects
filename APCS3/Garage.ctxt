@@ -1,4 +1,14 @@
 #BlueJ class context
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
-numComments=1
+comment1.params=arr
+comment1.target=int\ totalPassengers(java.lang.Object[])
+comment2.params=arr
+comment2.target=double\ totalCargo(java.lang.Object[])
+comment3.params=arr
+comment3.target=double\ fillTanks(java.lang.Object[])
+comment4.params=arr
+comment4.target=double\ costFillTanks(java.lang.Object[])
+comment5.params=arr
+comment5.target=int\ totalDistance(java.lang.Object[])
+numComments=6
