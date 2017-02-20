@@ -20,6 +20,8 @@ public abstract class Vehicle
     }    
        
     //public void setGasCapacity(double cap) { gasCapacity = cap;}
+    public String getModel() { return model; }
+    public int getYear() { return year; }
     public int getOdometer() {return odometer;}
     public void setOdometer(int m) {odometer = m;}
     public double getGasCapacity () { return gasCapacity; }

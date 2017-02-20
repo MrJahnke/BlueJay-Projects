@@ -1,4 +1,4 @@
-public class Car extends Vehicle
+public class Car extends Vehicle implements Comparable, Safety
 {
     private int passengers;
     
@@ -30,5 +30,16 @@ public class Car extends Vehicle
     {
         double cost = drive(miles) * Vehicle.PRICE_PER_GALLON;
         return cost / passengers;
+    }
+    
+    public int compareTo(Object obj)
+    { 
+        Car c = (Car)obj;
+        return this.getYear()-c.getYear();
+    }
+    
+    public int calculateSafety()
+    {
+        return (this.getYear() - baseYear) + (10 - this.getOdometer()/10000);
     }
 }
