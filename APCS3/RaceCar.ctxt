@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ c\ s
+comment0.target=RaceCar(java.lang.String,\ java.lang.String,\ int)
+comment1.params=
+comment1.target=int\ calculateSafety()
+comment2.params=
+comment2.target=java.lang.String\ honk()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
