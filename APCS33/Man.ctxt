@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=Man(int,\ int)
+comment1.params=
+comment1.target=int\ f()
+comment2.params=
+comment2.target=int\ h()
+comment3.params=
+comment3.target=java.lang.String\ greeting()
+numComments=4
