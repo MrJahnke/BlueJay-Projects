@@ -35,12 +35,12 @@ public class Deck {
     public Deck(String[] ranks, String[] suits, int[] values) {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
         size = ranks.length + suits.length + values.length; 
-        cards = new ArrayList<Card>[size];
-        for (int r=0; r<rank.length; r++)
+        cards = new ArrayList<Card>();
+        for (int r=0; r<ranks.length; r++)
         {
             for (int s=0; s<suits.length; s++)
             {
-                cards[r+s] = new Card(ranks[r],suits[s],values[s]);
+                cards.add(new Card(ranks[r],suits[s],values[s]));
             }
         } 
         shuffle();
@@ -80,10 +80,10 @@ public class Deck {
      */
     public Card deal() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-        if (isEmpty) {
+        if (isEmpty()) {
             return null;
         } else {
-            return cards[size--];
+            return cards.get(size--);
         }
             
     }

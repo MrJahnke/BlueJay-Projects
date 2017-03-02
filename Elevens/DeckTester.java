@@ -14,5 +14,11 @@ public class DeckTester {
 	 */
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		String[] ranks = {"Jack", "Queen", "King", "Ace" };
+		String[] suits = {"Hearts", "Clubs", "Spades", "Diamonds" };
+		int[] values1 = { 11 , 12, 13, 14 };
+		
+		Deck regDeck = new Deck(ranks, suits, values1 );
+		System.out.println(regDeck);
 	}
 }
