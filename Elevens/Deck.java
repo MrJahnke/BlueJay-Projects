@@ -34,16 +34,22 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-        size = ranks.length + suits.length + values.length; 
+        size = ranks.length * suits.length; 
         cards = new ArrayList<Card>();
-        for (int r=0; r<ranks.length; r++)
+        if (ranks.length == values.length) 
         {
-            for (int s=0; s<suits.length; s++)
+            for (int r=0; r<ranks.length; r++)
             {
-                cards.add(new Card(ranks[r],suits[s],values[s]));
-            }
-        } 
-        shuffle();
+                for (int s=0; s<suits.length; s++)
+                {
+                    cards.add(new Card(ranks[r],suits[s],values[r]));
+                }
+            } 
+            shuffle();
+        } else {
+            System.out.println("Error");
+        }
+        
     }
 
 
@@ -83,7 +89,7 @@ public class Deck {
         if (isEmpty()) {
             return null;
         } else {
-            return cards.get(size--);
+            return cards.get(--size);
         }
             
     }
