@@ -15,8 +15,8 @@ public class Tester
         System.out.println("m.h() = " + m.h());
         System.out.println("m says " + m.greeting());;
         
-        System.out.println(m instanceof Person);
-        System.out.println(m instanceof Man);
-        System.out.println(m instanceof Object);
+        System.out.println(p instanceof Person);
+        System.out.println(p instanceof Man);
+        System.out.println(p instanceof Object);
     }
 }
