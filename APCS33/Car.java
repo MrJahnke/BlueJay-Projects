@@ -1,5 +1,5 @@
 
-public class Car extends Vehicle
+public class Car extends Vehicle implements Safety, Comparable
 {
     // instance variables 
     private int passengers;
@@ -19,6 +19,17 @@ public class Car extends Vehicle
     public String honk()
     {
         return "Beep-Beep";
+    }
+    
+    public int calculateSafety()
+    {
+        return this.getYear() - baseYear;
+    }
+    
+    public int compareTo(Object other)
+    {
+        //Car c = (Car)other;
+        return this.getYear() - ((Car)other).getYear();
     }
 
 }

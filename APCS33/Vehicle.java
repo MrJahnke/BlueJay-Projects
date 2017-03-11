@@ -18,6 +18,8 @@ public abstract class Vehicle
     {
         return year + " " + color + " " + model;
     }
+    
+    public int getYear() { return year; }
 
     public abstract String honk();
     
