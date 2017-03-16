@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Write a description of class WarmUp here.
  * 
@@ -11,21 +12,14 @@ public class WarmUp
         
         
     }
-    public WarmUp()
-    {
-        // initialise instance variables
-        x = 0;
-    }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+
+    
+    public ArrayList<Integer>findEvens(int[] arr)
     {
-        // put your code here
-        return x + y;
+       ArrayList<Integer> result = new ArrayList<Integer>();
+       
+       
+       return result;
     }
 }
