@@ -7,6 +7,5 @@ comment2.params=arr
 comment2.target=int[]\ findEvens2(int[])
 comment3.params=arr
 comment3.target=int[]\ findEvens3(int[])
-comment4.params=arr
-comment4.target=void\ findEvens4(int[])
-numComments=5
+comment3.text=public\ static\ void\ findEvens3(int[]\ arr)\n\ \ \ \ {\n\ \ \ \ \ \ for\ (int\ x\=0;\ x<arr.length;\ x++\ )\ {\n\ \ \ \ \ \ \ \ \ \ \ if\ (arr[x]%2\!\=0)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ arr[x]\=0;\n\ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ }\n\ \ \ \ }\n
+numComments=4

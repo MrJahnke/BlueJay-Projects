@@ -10,11 +10,21 @@ public class WarmUp
 {
     public static void main(String[] args) {
         int[] nums = {3,6,2,5,7,8,9,1};
-        System.out.println(findEvens(nums));
+        for (int x : nums)
+            System.out.print(x+" ");
+        System.out.println();
+        System.out.println("nums: " + findEvens(nums));
+        
         int[] evens = findEvens2(nums);
+        System.out.print("findEvens2 ");
         for (int x : evens)
             System.out.print(x+" ");
         System.out.println();
+        for (int x : nums)
+            System.out.print(x+" ");
+            
+        System.out.println();
+        System.out.print("findEvens3 ");
         int[] evens3 = findEvens3(nums);
         for (int x : evens3)
             System.out.print(x+" ");
@@ -22,9 +32,15 @@ public class WarmUp
         for (int x : nums)
             System.out.print(x+" ");
         System.out.println();
-        findEvens4(nums);
-        for (int x : nums)
-            System.out.print(x+" ");    
+        
+        //System.out.println();
+        //System.out.print("findEvens4 ");
+        //for (int x : nums)
+       //     System.out.print(x+" ");
+       // System.out.println();
+       // findEvens4(nums);
+       // for (int x : nums)
+       //     System.out.print(x+" ");    
     }
 
 
@@ -55,21 +71,25 @@ public class WarmUp
       return result;
     }
     
+    
+    /*public static void findEvens3(int[] arr)
+    {
+      for (int x=0; x<arr.length; x++ ) {
+           if (arr[x]%2!=0) {
+               arr[x]=0;
+           }
+      }
+    }
+    */
+   
     public static int[] findEvens3(int[] arr)
     {
+      int[] result = arr;
       for (int x=0; x<arr.length; x++ ) {
            if (arr[x]%2!=0) {
-               arr[x]=0;
+               result[x]=0;
            }
       }
-      return arr;
-    }
-    public static void findEvens4(int[] arr)
-    {
-      for (int x=0; x<arr.length; x++ ) {
-           if (arr[x]%2!=0) {
-               arr[x]=0;
-           }
-      }
+      return result;
     }
 }
