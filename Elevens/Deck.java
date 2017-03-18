@@ -78,6 +78,15 @@ public class Deck {
     public void shuffle() {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
         size = cards.size();
+        //int size = values.length;
+        for (int k=size-1; k>=0; k--) 
+        {
+            int r = (int)(Math.random()*k+1);
+            Card temp = cards.get(k);
+            cards.set(k, cards.get(r));
+            cards.set(r, temp);
+
+        }
     }
 
     /**
@@ -106,7 +115,7 @@ public class Deck {
         for (int k = size - 1; k >= 0; k--) {
             rtn = rtn + cards.get(k);
             if (k != 0) {
-                rtn = rtn + ", ";
+                rtn = rtn + ",\t ";
             }
             if ((size - k) % 2 == 0) {
                 // Insert carriage returns so entire deck is visible on console.

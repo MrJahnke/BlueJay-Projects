@@ -14,7 +14,7 @@ public class DeckTester {
      */
     public static void main(String[] args) {
         /* *** TO BE IMPLEMENTED IN  ACTIVITY 2 *** */
-    
+    /*
         String[] ranks = {"jack", "queen", "king"};
         String[] suits = {"blue", "red"};
         int[] pointValues = {11, 12, 13};
@@ -57,7 +57,7 @@ public class DeckTester {
         System.out.println("  deal: " + d.deal());
         System.out.println();
         System.out.println();
-        
+       */ 
         /* If the above runner works, comment it out and make a new deck
          * that can be use for playing BlackJack.
          * Suits:  Hearts, Clubs, Diamonds, Spades.
@@ -66,7 +66,13 @@ public class DeckTester {
          * Print the deck.
          */
         
-        
+         String[] ranks = {"Ace", "2","3","4","5","6","7","8","9","10","J", "Q", "K"};
+        String[] suits = {"Clubs   ", "Hearts  ", "Spades  ", "Diamonds"};
+        int[] pointValues = {1,2,3,4,5,6,7,8,9,10,11, 12, 13};
+        Deck d = new Deck(ranks, suits, pointValues);
+
+        System.out.println("**** Original Deck Methods ****");
+        System.out.println(d);
         
         
         
