@@ -6,7 +6,7 @@
  * @author Mr Jahnke 
  * @version March 1, 2017
  */
-public class Card {
+public class Card implements Comparable {
 
     /**
      * String value that holds the suit of the card
@@ -96,4 +96,19 @@ public class Card {
         /* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
         return rank + " of " + suit + " (point value = " + pointValue +")";
     }
+    
+    public String getSuit() {return suit;}
+    public String getRank() {return rank;}
+    public int getPointValue() {return pointValue;}
+    
+    // Doesn't work with selection sort, only can tell greater or less than, not MAX or MIN.
+    //should work with inserttion sort where only comparisions are made.
+    public int compareTo(Object other){
+        Card c = (Card)other;
+        if (this.getSuit().equals(c.getSuit()))
+            return this.getPointValue() - c.getPointValue();
+        else
+            return this.getSuit().compareTo(c.getSuit());
+    }
+    
 }

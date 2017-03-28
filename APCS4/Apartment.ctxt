@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=own\ occ
+comment0.target=Apartment(java.lang.String,\ int)
+comment1.params=
+comment1.target=Apartment()
+comment2.params=
+comment2.target=int\ getOccupancy()
+comment3.params=
+comment3.target=java.lang.String\ getOwner()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

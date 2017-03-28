@@ -117,7 +117,7 @@ public class Deck {
             if (k != 0) {
                 rtn = rtn + ",\t ";
             }
-            if ((size - k) % 2 == 0) {
+            if ((size - k) % 4 == 0) {
                 // Insert carriage returns so entire deck is visible on console.
                 rtn = rtn + "\n";
             }
@@ -138,4 +138,59 @@ public class Deck {
         rtn = rtn + "\n";
         return rtn;
     }
+    
+    public void selectionSort(){
+        int min, minIndex;
+        int count = 0;
+        for (int i=0; i<cards.size(); ++i) {
+            min = (cards.get(i)).getPointValue();
+            minIndex = i;
+            for (int j = i+1; j<cards.size(); ++j) {
+                int value = cards.get(j).getPointValue();
+                if (value < min){
+                     min = value;
+                     minIndex = j;
+                }
+                count++;
+            }
+            Card temp = cards.get(i);
+            cards.set(i, cards.get(minIndex));
+            cards.set(minIndex, temp);
+            count++;
+        }
+        System.out.println("Count: "+count);
+    }
+   
+    public void insertionSort(){
+        Card cardToInsert;
+        int count = 0;
+        int j;
+        boolean keepGoing;
+        for (int k=1; k<cards.size(); k++)
+        {
+            cardToInsert = cards.get(k);
+            j = k-1;
+            keepGoing = true;
+            count++;
+            while((j>=0) && keepGoing)
+            {
+                Card c = cards.get(j);
+                if(cardToInsert.compareTo(c) < 0)
+                {
+                    cards.set(j+1, c);
+                    j--;
+                    if(j == -1) // special for inserting at [0]
+                        cards.set(0,cardToInsert);
+                }
+                else 
+                {
+                    keepGoing = false;
+                    cards.set(j+1, cardToInsert);
+                }
+                count++;
+            }
+        }
+       System.out.println("Count: " +count);     
+    }
+
 }

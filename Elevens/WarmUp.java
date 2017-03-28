@@ -20,8 +20,16 @@ public class WarmUp
         for (int x : nums)
             System.out.print(x+" ");
         System.out.println();
-        System.out.println("nums: " + findEvens(nums));
+        ArrayList arrNums = findEvens(nums);
+        System.out.println(arrNums);
+        System.out.println(arrNums.get(1));
+        System.out.println(arrNums);
         
+        
+        //System.out.println("nums: " + findEvens(nums));
+        
+        
+        /*
         int[] evens = findEvens2(nums);
         System.out.println("findEvens2 ");
         for (int x : evens)
@@ -78,6 +86,8 @@ public class WarmUp
        System.out.println();
         for (int x : nums7)
             System.out.print(x+" ");
+            
+            */
     }
 
 
