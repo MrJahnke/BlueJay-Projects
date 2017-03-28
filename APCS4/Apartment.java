@@ -1,5 +1,5 @@
 
-public class Apartment
+public class Apartment implements Comparable
 {
     // instance variables - replace the example below with your own
     private int occupancy;
@@ -44,5 +44,10 @@ public class Apartment
     public String toString()
     {
         return owner + ", " + occupancy; 
+    }
+    
+    public int compareTo(Object other)
+    {
+        return this.occupancy - ((Apartment)other).getOccupancy();
     }
 }
