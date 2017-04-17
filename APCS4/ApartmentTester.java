@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class ApartmentTester
 {
     public static void main(String[] args) {
+        
         Apartment[][] building = new Apartment[10][5];
         
         for (int r=0; r<building.length; r++) {
@@ -11,19 +12,34 @@ public class ApartmentTester
             }
         }
         
+        print(building);
+        //sort();
+     
+       //System.out.println("\nSorted Apartments\n");
         
-         //for (int floor=0; floor<building.length; floor++) {
-         //    Arrays.fill(building[floor], new Apartment());
-        // }
-        
-         for (int r=0; r<building.length; r++) {
-            for (int c=0; c<building[r].length; c++)
+       //print();
+       
+       System.out.println("\nTotal Occupants: "+totalOccupants(building) +"\n");
+       
+       makeRoommates(building);
+       print(building);
+       
+       System.out.println("\nTotal Occupants: "+totalOccupants(building) +"\n");
+      
+
+    }
+    
+    private static void print(Apartment[][] building){
+        for (int r=building.length-1; r>=0; r--) {
+            for (int c=building[r].length-1; c>=0; c--)
             {
                 System.out.print(building[r][c] + "\t");
             }
             System.out.println();
         }
-        
+    }
+    
+    private static void sort(Apartment[][] building){
         int len = building.length*building[0].length;
         Apartment[] apartments = new Apartment[len];
         int x = 0;
@@ -35,12 +51,7 @@ public class ApartmentTester
                 x++;
             }
         }
-        
-            System.out.println();
-                System.out.println("Sorted Apartments");
-                    System.out.println();
-        
-       Arrays.sort(apartments);
+        Arrays.sort(apartments);
        x=0;
        for (int r=0; r<building.length; r++) {
             for (int c=0; c<building[r].length; c++)
@@ -50,12 +61,40 @@ public class ApartmentTester
             }
         }
         
-        for (int r=building.length-1; r>=0; r--) {
-            for (int c=building[r].length-1; c>=0; c--)
+    }
+
+    
+    public static int totalOccupants(Apartment[][] building) {
+        int total=0;
+        for (int r=0; r<building.length; r++) {
+            for (int c=0; c<building[r].length; c++)
             {
-                System.out.print(building[r][c] + "\t");
+                if (building[r][c]!=null)
+                    total+= building[r][c].getOccupancy();
             }
-            System.out.println();
+        }
+        return total;
+    }
+    
+    public static void makeRoommates(Apartment[][] building) {
+        int row1 = -1, col1 = -1;
+        for (int r=0; r<building.length; r++) {
+            for (int c=0; c<building[r].length; c++)
+            {
+                if( building[r][c].getOwner().equals("single")) {
+                    if (row1 == -1){
+                        row1=r;
+                        col1=c;
+                    }
+                    else {
+                        building[row1][col1] = new Apartment("roomies", 2);
+                        row1 = -1;
+                        col1 = -1;
+                        building[r][c] = new Apartment("empty ", 0);
+                        //building[r][c] = null;
+                    } 
+                }
+            }
         }
     }
 }

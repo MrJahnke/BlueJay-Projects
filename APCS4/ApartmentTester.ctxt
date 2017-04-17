@@ -1,4 +1,12 @@
 #BlueJ class context
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
-numComments=1
+comment1.params=building
+comment1.target=void\ print(Apartment[][])
+comment2.params=building
+comment2.target=void\ sort(Apartment[][])
+comment3.params=building
+comment3.target=int\ totalOccupants(Apartment[][])
+comment4.params=building
+comment4.target=void\ makeRoommates(Apartment[][])
+numComments=5
