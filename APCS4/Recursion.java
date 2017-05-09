@@ -7,24 +7,19 @@
  */
 public class Recursion
 {
-   public static void main(String[] args) {
-       
-       //printSomething("ABCD");
-       doSomething("ABCD");
-       
+   public static void main(String[] args) {  
+       printSomething("ABCD");
+       //doSomething("ABCD"); 
    }
     
-   
    static void doSomething(String s){
        int len = s.length();
        if (len < 1) {
-           System.out.println("Done");
+           //System.out.println("Done");
            return;
         }
-       
        System.out.println(s.substring(0,len));
-       doSomething(s.substring(0,len-1));
-        
+       doSomething(s.substring(0,len-1));   
     }
     
     static void printSomething(String s) {

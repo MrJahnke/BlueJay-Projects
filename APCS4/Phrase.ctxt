@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=p
+comment0.target=Phrase(java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=str\ n
+comment2.target=int\ findNthOccurrence(java.lang.String,\ int)
+comment3.params=str\ n\ repl
+comment3.target=void\ replaceNthOccurrence(java.lang.String,\ int,\ java.lang.String)
+comment4.params=str
+comment4.target=int\ findLastOccurrence(java.lang.String)
+numComments=5
