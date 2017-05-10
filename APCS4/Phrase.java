@@ -1,10 +1,8 @@
-
 public class Phrase
 {
     private String currentPhrase;
 
-    public Phrase(String p)
-    {
+    public Phrase(String p) {
         currentPhrase = p;
     }
     

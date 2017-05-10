@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class MultPractice here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class MultPractice implements StudyPractice
 {
     private int firstInt;
